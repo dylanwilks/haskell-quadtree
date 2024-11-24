@@ -14,7 +14,7 @@ fair_exercise _ = False
 ```
 
 The main problem of interest is the 3rd one. A summary of it is as follows:\
-Suppose we have a function $f : Q \rightarrow \mathbb{B}$ that maps the set of ergodomestic (see below) quadtrees to $\lbrace \top, \bot \rbrace$.
+Suppose we have a function $f : Q \rightarrow \mathbb{B}$ that maps the set of both finite and infinite ergodomestic (see below) quadtrees to $\lbrace \top, \bot \rbrace$.
 
 <p align="center">
   <img src=https://github.com/user-attachments/assets/846d4839-9227-440c-abd9-96408b4c3c3b width="600">
