@@ -11,7 +11,7 @@ data Color = White | Black
   deriving (Eq, Show)
 
   --quadtree recursive data constructors; Cell represents the base case of 1 color
-data QuadTree = Cell Color | Quadrants QuadTree QuadTree QuadTree QuadTree | Empty
+data QuadTree = Cell Color | Quadrants QuadTree QuadTree QuadTree QuadTree
   deriving (Eq, Show)
 
 --Type constructors--

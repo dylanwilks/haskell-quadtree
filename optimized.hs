@@ -6,7 +6,7 @@ import System.IO.Unsafe
 data Color = White | Black 
   deriving (Eq, Show)
 
-data QuadTree = Cell Color | Quadrants QuadTree QuadTree QuadTree QuadTree | Empty
+data QuadTree = Cell Color | Quadrants QuadTree QuadTree QuadTree QuadTree
   deriving (Eq, Show)
 
 allBlack :: QuadTree 
