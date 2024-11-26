@@ -67,7 +67,7 @@ We iterate over every one of these quadtrees because - thanks to haskell's lazy 
 and would hence not match the errors.
 
 The idea behind doing this is, if we yield an error in our search of quadtrees of depth $n$, and then yield no errors for quadtrees of depth $(n+1)$, then $f$ only pattern matches quadtrees
-up to depth $n$. All that remains to do is to test $f$ on all quadtrees with $n \leq (n+1)$.
+up to depth $n$. All that remains to do is to test $f$ on all quadtrees with $n < (n+1)$.
 
 The solution is described in more detail in `creative.hs` through the comments. The first half of the code is concerned about enumerating both finite and infinite quadtrees. It does this by constructing
 every possible cyclic multi-digraph where all but 2 nodes (the white and black nodes) have 4 outgoing edges to other nodes, possibly including itself. Each graph is then converted to its corresponding quadtree.
